@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import TextInput from './components/TextInput';
+import Checkbox from './components/Checkbox';
+import Header from './components/Header';
+import Category from './components/Category';
+import Items from './components/Items';
+
+const sportingGoods = [
+  {name:'Football', price: 49.99},
+  {name:'Baseball', price: 9.99},
+  {name:'Baskketball', price: 29.99}
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TextInput />
+      <Checkbox/>
+      <table>
+        <Header/>
+        <Category/>
+        <Items items = {sportingGoods} includePrice></Items>
+      </table>
+
     </div>
   );
 }
