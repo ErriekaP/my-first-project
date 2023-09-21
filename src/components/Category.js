@@ -2,7 +2,7 @@ import React from 'react'
 
 const Category = () => {
   return (
-    <div>
+    <>
         <tr>
         <td style={{
             fontWeight:'bold',
@@ -12,7 +12,7 @@ const Category = () => {
 
 
     </tr>
-    </div>
+    </>
   )
 }
 

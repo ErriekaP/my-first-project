@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Checkbox = () => {
+const Checkbox = ({ checked, onChange }) => {
   return (
     <div>
-      <input type='checkbox' onChange={(e) => console.log(e.target.checked)}/>
+      <input type='checkbox' checked={checked} onChange={onChange}/>
       <span>Only show products in stock</span>
     </div>
   )
