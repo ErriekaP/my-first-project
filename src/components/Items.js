@@ -5,9 +5,10 @@ const Items = (props) => {
   return (
     <>
       {props.items.map(item => (
-        <tr>
+        <tr key={item.id} onClick={() => alert(`${item.name} - ${item.price}`)}>
             <td>{item.name}</td>
             <td>{props.includePrice && `$${item.price}`}</td>
+            <td>{item.stock}</td>
         </tr>
       ))}
     </>

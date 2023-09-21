@@ -1,9 +1,9 @@
 import React from 'react'
 
-function TextInput() {
+function TextInput({value, onChange}) {
   return (
   
-    <input type='text' />
+    <input type='text' value={value} onChange = {onChange} />
     
   )
 }
