@@ -16,7 +16,8 @@ const Header = () => {
 
       <td style={{
             fontWeight:'bold',
-            color: 'red'
+            color: 'red',
+            paddingLeft: '50px'
         }}>Stock</td>
 
     </tr>
